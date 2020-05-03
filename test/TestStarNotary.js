@@ -98,7 +98,7 @@ it('lets 2 users exchange stars', async() => {
 
     await instance.createStar('Awesome Star2!', tokenId2, {from: accounts[2]});
     
-    await instance.exchangeStars(tokenId1,tokenId2);
+    await instance.exchangeStars(tokenId1,tokenId2,{from: accounts[1]});
 
     // 1. create 2 Stars with different tokenId
     // 2. Call the exchangeStars functions implemented in the Smart Contract
